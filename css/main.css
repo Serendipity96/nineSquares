@@ -1,0 +1,24 @@
+.square_group {
+	margin: 0 auto;/*垂直居中?*/
+	width: 100%;
+	max-width: 16.875em;
+}
+.square_group div{
+	float: left;
+	width: 5em;
+	height: 5em;
+	margin-left:0.625em;
+	margin-top: 0.625em;/*每个小方块之间的间隙，而不是padding*/
+	background-color: orange;/*computed?*/
+	border-radius: 5px;
+}
+
+@media screen and (max-device-width:290px) {
+	.square_group div{
+	float: left;
+	width: 25%;
+	height: 25%;
+	margin-left:25%;
+	margin-top: 25%;
+	}
+}
