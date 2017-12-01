@@ -2,6 +2,7 @@
 	margin: 0 auto;/*垂直居中?*/
 	width: 100%;
 	max-width: 16.875em;
+	position: relative;
 }
 .square_group div{
 	float: left;
@@ -13,7 +14,7 @@
 	border-radius: 5px;
 }
 
-@media screen and (max-device-width:290px) {
+/*@media screen and (max-device-width:290px) {
 	.square_group div{
 	float: left;
 	width: 25%;
@@ -21,4 +22,24 @@
 	margin-left:25%;
 	margin-top: 25%;
 	}
+}*/
+
+.button_group{
+	margin-top: 300px;
+	position: absolute;
+	left: 50%;
+	margin-left: -125px;
+
 }
+.button_group .button{
+	width: 260px;
+	height: 50px;
+	margin-top: 10px;
+	background-color: orange;
+	color: white;
+	text-align: center;
+	line-height: 50px;/*文字垂直居中*/
+	cursor: pointer;
+}
+
+

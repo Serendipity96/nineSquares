@@ -6,9 +6,10 @@
 	<meta name="viewport" content="width=device-width,initial=1.0">
 	<title>nineSquares</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/main.js"></script>
 </head>
 <body>
-	<div class="square_group">
+	<div id="div_group" class="square_group">
 		<div></div>
 		<div></div>
 		<div></div>
@@ -21,5 +22,10 @@
 		<div></div>
 		<div></div>
 	</div>
-	</body>
+	<div class="button_group">
+		<div class="button" onclick="onClick(),randomColor()">start</div>
+		<div class="button" onclick="onClick()">byebye</div>
+	</div>
+
+<body>
 </html>
