@@ -55,13 +55,18 @@ function startChangeColor() {
 //选颜色
 function randomColor() {
 	var colorStr = [];
-	var i;
+	var i,j;
 	for (i = 0; i < 3; i++) {
 		var a;
 		a = parseInt(Math.random() * 0xffffff).toString(16);//255*255*255
+		var len = a.length;
+		for(j=0;j<6-len;j++){
+			a='0'+a;
+		}
 		colorStr[i] = '#' + a;
 	}
 	return colorStr;
+	
 }
 
 //清除一次颜色
@@ -76,11 +81,5 @@ function clearColor(){
 
 //重置全部颜色
 function resetColor(){
-	var div_group = document.getElementById("div_group");
-	var divs = div_group.getElementsByTagName("div");//9（0-8）
-	//恢复颜色
-	for (var i = 0; i < 9; i++) {
-		divs[i].style.backgroundColor = '#ff9900';
-	}
 	clearInterval(emmm);
 }
