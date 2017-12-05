@@ -1,5 +1,5 @@
 .square_group {
-	margin: 0 auto;/*垂直居中?*/
+	margin: 0 auto;/*垂直居中*/
 	width: 100%;
 	max-width: 16.875em;
 	position: relative;
@@ -10,19 +10,10 @@
 	height: 5em;
 	margin-left:0.625em;
 	margin-top: 0.625em;/*每个小方块之间的间隙，而不是padding*/
-	background-color: orange;/*computed?*/
+	background-color: orange;/*computed性能问题*/
 	border-radius: 5px;
 }
 
-/*@media screen and (max-device-width:290px) {
-	.square_group div{
-	float: left;
-	width: 25%;
-	height: 25%;
-	margin-left:25%;
-	margin-top: 25%;
-	}
-}*/
 
 .button_group{
 	margin-top: 300px;
